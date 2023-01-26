@@ -1,5 +1,7 @@
 package programmers.introduction;
 
+import java.util.Arrays;
+
 /**
  * 짝수 홀수 개수([짝수개수, 홀수개수])
  */
@@ -23,14 +25,7 @@ public class EvenOddNumCountTest {
         int[] result1 = solution(new int[]{1, 2, 3, 4, 5});
         int[] result2 = solution(new int[]{1, 3, 5, 7});
 
-        for (int i : result1) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-
-        for (int i : result2) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        System.out.println(Arrays.toString(result1));
+        System.out.println(Arrays.toString(result2));
     }
 }
