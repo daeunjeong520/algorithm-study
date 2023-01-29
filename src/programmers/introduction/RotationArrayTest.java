@@ -22,7 +22,6 @@ public class RotationArrayTest {
             }
             arrayList.add(numbers[0]);
         }
-
         return arrayList.stream().mapToInt(Integer::intValue).toArray();
     }
 
