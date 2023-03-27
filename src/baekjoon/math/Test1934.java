@@ -2,25 +2,26 @@ package baekjoon.math;
 
 import java.io.*;
 
-/**
- * 문자열
- */
-public class Test9086 {
+public class Test1934 {
+
+    public static int gcd(int a, int b) {
+        if(a % b == 0) return b;
+        else return gcd(b, a % b);
+    }
+
+    public static int lcm(int a, int b) {
+        return a * b / gcd(a, b);
+    }
+
     public static void main(String[] args) throws IOException {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int t = Integer.parseInt(br.readLine());
 
         for(int i = 0; i < t; i++) {
-            String[] strArr = br.readLine().split("");
-
-            if(strArr.length == 1) {
-                bw.write(strArr[0] + strArr[0] + "\n");
-            }else if(strArr.length == 2){
-                bw.write(strArr[0] + strArr[1] + "\n");
-            }else {
-                bw.write(strArr[0] + strArr[strArr.length - 1] + "\n");
-            }
+            String[] str = br.readLine().split(" ");
+            bw.write(lcm(Integer.parseInt(str[0]), Integer.parseInt(str[1])) + "\n");
         }
         bw.close();
     }
