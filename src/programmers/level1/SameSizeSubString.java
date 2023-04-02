@@ -1,5 +1,8 @@
 package programmers.level1;
 
+/**
+ * 크기가 작은 부분문자열
+ */
 public class SameSizeSubString {
 
     public static int solution(String t, String p) {
