@@ -27,6 +27,5 @@ public class DivisorNumArr {
         }else {
             return result.stream().mapToInt(Integer::intValue).toArray();
         }
-
     }
 }
