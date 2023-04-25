@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+/**
+ * 괄호
+ */
 public class Test9012 {
 
     public static String solution(String vps) {
