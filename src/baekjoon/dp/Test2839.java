@@ -2,6 +2,9 @@ package baekjoon.dp;
 
 import java.util.Scanner;
 
+/**
+ * 설탕 배달
+ */
 public class Test2839 {
 
     public static int solution(int n) {
