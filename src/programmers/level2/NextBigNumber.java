@@ -1,7 +1,5 @@
 package programmers.level2;
 
-import java.util.Arrays;
-
 /**
  * 다음 큰 숫자
  */
