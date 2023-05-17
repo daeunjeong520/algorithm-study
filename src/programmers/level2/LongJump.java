@@ -4,7 +4,6 @@ package programmers.level2;
  * 멀리뛰기
  */
 public class LongJump {
-
     public static long solution(int n) {
         long[] dp = new long[2001];
         dp[1] = (long)1;
