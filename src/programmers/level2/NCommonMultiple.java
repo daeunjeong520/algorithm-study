@@ -1,5 +1,8 @@
 package programmers.level2;
 
+/**
+ * N개의 최소공배수
+ */
 public class NCommonMultiple {
 
     public static int solution(int[] arr) {
